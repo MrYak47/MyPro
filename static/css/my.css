@@ -1,0 +1,160 @@
+
+
+h1 {
+
+}
+
+.navbar-brand {
+    font-family: 'Hanken Grotesk', serif;
+    font-size: 32px;
+    text-shadow: 4px 4px 4px black;
+    font-weight: bold;
+    
+}
+
+#Searchbut{
+    border: 2pt;
+    background-color: blue;
+    outline-color: aqua;
+    color: white;
+    font-weight: 2pt;
+}
+
+#searchin {
+    color: black;
+    float: right;
+    margin-top: 10px !important;
+    margin-right: 10px;
+    fo
+}
+
+#navbar-list {
+    float: right;
+}
+
+#navbar-list li a{
+    color: white;
+    font-weight: 100;
+
+}
+
+.img-fluid{
+    /* padding: auto; */
+    /* width:  135px;
+    height: 120px; */
+    aspect-ratio: 17px/30px;
+}
+
+.navbar {
+    scroll-behavior: inherit;
+    background-color: red;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin-bottom: 50px;
+    position: relative;
+    height: 100px;
+    /* border: 15px */
+}
+
+
+
+/* .navbar-toggler {
+    background-color: orange;
+    position: relative;    
+
+}
+
+.navbar-toggler-icon {
+    color: black;
+    height: 50px;
+} */
+.container {
+    align-content: center;
+}
+
+/* div.row {
+
+    max-block-size: inherit;
+    margin-left: 100px !important;
+    padding: 10px;
+    position: absolute;
+} */
+
+
+h1 {
+    padding-left: 0px;
+    margin-top: 20px;
+    margin-left: 30px;
+    color: black;
+    position: relative;
+}
+
+h2 {
+    /* margin-top:; */
+    font-size: 2rem;
+    /* margin-top: 20px; */
+    /* position: relative; */
+    padding: 10px;
+
+}
+
+/* h3 {
+     
+} */
+#dem {
+    /* aspect-ratio: 1px / 1px; ; */
+    width: 250;
+    height: 228;
+}
+ 
+
+#caption {
+
+    font-size: medium;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+    font-style: italic;
+    color: black;
+
+}
+
+#grade{
+    width: 1500px;
+    height: 60px;
+    background-color: gray;
+    align-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+}
+
+#cate {
+    position: relative;
+    margin: 12px;
+    padding: 10px;
+    align-content: center;
+    height: 50px;
+}
+
+#premium {
+    max-block-size: inherit;
+    margin-left: 100px !important;
+    padding: 10px;
+    position: absolute;
+}
+
+#cheese {
+    left: 100px;
+    top: 300px;
+}
+
+img {
+    position: relative;
+}
+
+/* @media (min-width: 567px) */
+ 
+/* .border {
+    
+} */

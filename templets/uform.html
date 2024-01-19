@@ -1,0 +1,27 @@
+{% extends 'index.html' %}
+{%load static %}
+{% block title %}My Form{%endblock%}
+{%block content%}
+<h1 style="text-align: center; margin-top: 1rem;"> Form</h1>
+<div class="container-fulid">
+    <div class="row">
+        <div class="col-md-6" style="margin: 0 auto;">
+            <form method="GET" action="{%url 'submitf'%}">
+                <div class="form-group">
+                    <label for="name">Username</label>
+                    <input type="text" id="name" name="usrname" class="form-control">
+                     
+                </div>
+                <div class="form-group">
+                    <label for="uemail">Email</label>
+                    <input type="email" id="uemail" name="usremail" class="form-control">
+                     
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn btn-primary" style="margin: 0 auto;display: block;">Submit</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{%endblock%}

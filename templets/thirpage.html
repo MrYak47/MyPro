@@ -1,0 +1,21 @@
+{% extends 'index.html' %}
+{% block title %}My Thirpage{%endblock%}
+{%block content%}
+    <h1>Thirpage same navbar</h1>
+    <h1>{{var}}</h1>
+    <h1>{{msg}}</h1>
+    <ul>
+        {%for eachfruit in myfrut%}
+        <li>
+            {{eachfruit}}
+        </li>
+        {%endfor%}
+    </ul>
+    {%if answ%}
+    <h1>{{num1}} is greater than {{num2}}</h1>
+    {%else%}
+    <h1>{{num2}} is greater than {{num1}}</h1>
+    {%endif%}
+    {%endblock%}
+
+    

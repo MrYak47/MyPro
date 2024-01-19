@@ -1,0 +1,17 @@
+
+    <h1>Imgpage same navbar</h1>
+    <div class="container-fulid">
+        <div class="row">
+            {% if var %}
+            <div class="col-md-12">
+                <img src="{% static 'django.png' %}" class="img-fluid" alt="Responsive image">        
+            </div>
+            {%else%}
+            <div class="col-md-12">
+                <img src="{% static 'python.png' %}" class="img-fluid" alt="Responsive image">        
+            </div>
+            {%endif%}
+          
+        </div>
+    </div>
+{%endblock%}

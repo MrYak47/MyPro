@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    {%load static%}
+    <link rel="stylesheet" href="{%static 'css/boot-css/bootstrap.css.map'%}">
+    <link rel="stylesheet" href="{%static 'css/boot-css/bootstrap.min.css'%}">
+    <link rel="stylesheet" href="{%static 'css/boot-css/bootstrap.css'%}">
+    <link rel="stylesheet" href="{%static 'css/styles.css'%}">
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous"> -->
+
+    <link href='https://fonts.googleapis.com/css?family=Oxygen:400,300,700' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Rubik' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Hanken+Grotesk' rel='stylesheet' type='text/css'>  </head>
+  <body>
+    <header>
+      <nav id="header-nav" class="navbar navbar-default">
+
+        <div class="navbar-header">
+          <div class="row" id="head">
+            <div class="col-lg-4" id="img-log">
+              <!-- <a href="index.html" class="align-self-center visible-md visible-lg"> -->
+              <div id="logo-img" alt="Logo image"><img src="{%static 'Cannabar-log.png'%}" class="img-fluid" alt="Logo"></img>
+              </div>
+            </div><!--img-log-->
+
+            <div class="col-lg-4" id="title">
+              <a class="navbar-brand" href="TheCannabud2.html">
+                <h1>Cannabar</h1>
+              </a>
+              <div id="caption">
+                <p>
+                  <span>The Place To Find Your Higher Self</span>
+                  <img src="{%static 'blunt.png'%}" alt="Cap Logo">
+                </p>
+              </div>
+            </div><!--title-->
+           
+            <div class="col-lg-6" id="butcol">
+              <button id="navbut" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button><!--navbar-toggler-->
+            
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <a class="dropdown-item" href="#">Action</a>
+                      <a class="dropdown-item" href="#">Another action</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                  </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+              </div><!--navbar-collapse-->
+            </div>
+          
+          </div><!--row head-->
+        
+           
+        
+        </div><!-- navbar-header-->
+        
+      </nav><!-- #header-nav -->
+
+    </header>
+  <!-- <div id="call-btn" class="visible-xs">
+    <a class="btn" href="tel:410-602-5008">
+    <span class="glyphicon glyphicon-earphone"></span>
+    410-602-5008
+    </a>
+  </div>
+  <div id="xs-deliver" class="text-center visible-xs">* We Deliver</div> -->
+
+    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">Navbar</a>
+      
+    </nav> -->
+    {%block content%}
+    <h1>Hello, world!!!!</h1> 
+    {%endblock%}
+    <script src="{%static 'js/boot-js/bootstrap.bundle.js'%}"></script>
+    <script src="{%static 'js/boot-js/bootstrap.bundle.min.js'%} "></script>
+    <script src="{%static 'js/boot-js/bootstrap.js'%} "></script>
+    <script src="{%static 'js/boot-js/bootstrap.min.js'%}"></script>
+    <!-- <script src="{%static 'js/ajax-utils.js'%}"></script> -->
+    <!-- <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
+  </body>
+</html>
