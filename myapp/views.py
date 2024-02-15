@@ -1,7 +1,8 @@
 """Module providingFunction printing python version."""
 from django.shortcuts import render
 from django.http import HttpResponse,JsonResponse
-from .form import *
+from .forms import *
+
 
 # Create your views here.
 
@@ -94,29 +95,36 @@ def forms2(request):
                 "form" : FeedbackForm()
             }
             errorflag = False
-            errors = []
-            if title != title.upper():
+            Errors = []
+            
+            if True != title.istitle():
                 errorflag = True
-                errormsg = "Title should be in Capital"
-                errors.append(errormsg)
-             
-            import re
+                errormsg = "Title should be capitilized!"
+                Errors.append(errormsg)
+                
+            import re    
             regex = '^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$'
             
             if not re.search(regex, email):
                 errorflag = True
                 errormsg = "Not a Valid Email address"
-                errors.append(errormsg)
+                Errors.append(errormsg)
+                
+            # else:
+            #     mydic["success"] = True
+            #     mydic["successmsg"] =  "Form Submitted"
+            #     return render(request,'forms.html',context=mydic)
             
-            if errorflag is not True:
+            if errorflag != True:
                 mydic["success"] = True
                 mydic["successmsg"] = "Form Submitted"
+            
                 # print(tit)
                 # print(sub)
                 # var =str("Form Submitted" + str(request.method))
                 # return HttpResponse(var)
             mydic["error"] = errorflag
-            mydic["error"] = errors
+            mydic["errors"] = Errors
             return render(request,'forms.html',context=mydic)
     
     
@@ -126,8 +134,3 @@ def forms2(request):
             "form" : form
         }
         return render(request,'forms.html',context=mydic)
-    
-    
-    
-    
-    

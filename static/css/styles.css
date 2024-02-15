@@ -14,7 +14,7 @@ body {
 
 /** HEADER **/
 #header-nav {
-  height: 100px;
+  height: 130px;
   width: 3000px;
   margin-top: 0px;
   padding-bottom: 5px;
@@ -30,14 +30,7 @@ body {
   margin-top: 0px;
 }
 
-#head {
-  position: relative;
-  height: max-content;
-  width: 2500px;
-  margin-left: 10px;
-  top: 5px;
-  background: transparent;
-}
+
 
 #img-log {
   position: relative;
@@ -62,23 +55,7 @@ body {
 }
 
 
-#title {
-  /* left: px; */
-  position: relative;
-
-  width: 300px;
-  height: 80px;
-}
-
-.navbar-brand {
-  padding-top: 10px;
-  padding-right: 20px;
-  margin-right: 15px;
-  position: relative;
-  left: 1rem;
-}
-
-.navbar-brand h1 { /* Restaurant name */
+.navbar-brand h1 { /* Site name */
   font-family: 'Rubrik', serif;
   color: black;
   font-size: 3rem;
@@ -90,7 +67,11 @@ body {
   margin-left: 15px;
   line-height: .75;
   text-decoration:cornsilk;
-  height: 0px;
+  height: max-content;
+  position: relative;
+  left: 150px;
+  top: -65px;
+
 }
 
 .navbar-brand a:hover, .navbar-brand a:focus {
@@ -109,10 +90,10 @@ body {
   position: relative;
   width: max-content;
   height: max-content;
-  left: 50px;
-  top: 10px;
+  left: 170px;
+  top: -85px;
   /* margin-bottom: 5px; */
-  bottom: 30px;
+  bottom: 0px;
 
 }
 
@@ -152,22 +133,14 @@ body {
   margin-left: 0px;
 
 }
-
-#navcol {
-  align-content: end;
-  display: flex;
-  position: absolute;
+/* 
+#navbut {
+  position: fixed;
   float: right;
 }
+ */
 
-#navbut {
-  position:relative;
-  /* float: right; */
-  width: max-content;
-  top: 0px;
-  margin-left: 0px;
-  left: 800px;
-}
+
 
 /* #collapsable-nav {
   width: max-content;
