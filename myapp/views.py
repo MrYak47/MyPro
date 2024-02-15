@@ -5,6 +5,8 @@ from .forms import *
 
 
 # Create your views here.
+def error_404_view(request,exception):
+    return render(request, '404.html')
 
 def myfunctioncall(request):
     """Function printing python version."""
